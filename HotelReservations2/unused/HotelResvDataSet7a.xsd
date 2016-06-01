@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HotelResvDataSet7" targetNamespace="http://tempuri.org/HotelResvDataSet7.xsd" xmlns:mstns="http://tempuri.org/HotelResvDataSet7.xsd" xmlns="http://tempuri.org/HotelResvDataSet7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelResvConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelResvConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HotelReservations2.Properties.Settings.GlobalReference.Default.HotelResvConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="browseCustViewTableAdapter" GeneratorDataComponentClassName="browseCustViewTableAdapter" Name="browseCustView" UserDataComponentName="browseCustViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelResvConnectionString (Settings)" DbObjectName="HotelResv.dbo.browseCustView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Customer_Number, RoomType_Name, Customer_FName, Customer_LName, Customer_addr1, Customer_addr2, Customer_city, Customer_state, Customer_zip, Customer_phone, Customer_discounts, Customer_guid FROM dbo.browseCustView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Customer_Number" DataSetColumn="Customer_Number" />
+              <Mapping SourceColumn="RoomType_Name" DataSetColumn="RoomType_Name" />
+              <Mapping SourceColumn="Customer_FName" DataSetColumn="Customer_FName" />
+              <Mapping SourceColumn="Customer_LName" DataSetColumn="Customer_LName" />
+              <Mapping SourceColumn="Customer_addr1" DataSetColumn="Customer_addr1" />
+              <Mapping SourceColumn="Customer_addr2" DataSetColumn="Customer_addr2" />
+              <Mapping SourceColumn="Customer_city" DataSetColumn="Customer_city" />
+              <Mapping SourceColumn="Customer_state" DataSetColumn="Customer_state" />
+              <Mapping SourceColumn="Customer_zip" DataSetColumn="Customer_zip" />
+              <Mapping SourceColumn="Customer_phone" DataSetColumn="Customer_phone" />
+              <Mapping SourceColumn="Customer_discounts" DataSetColumn="Customer_discounts" />
+              <Mapping SourceColumn="Customer_guid" DataSetColumn="Customer_guid" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HotelResvDataSet7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HotelResvDataSet7" msprop:Generator_UserDSName="HotelResvDataSet7">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="browseCustView" msprop:Generator_TableClassName="browseCustViewDataTable" msprop:Generator_TableVarName="tablebrowseCustView" msprop:Generator_TablePropName="browseCustView" msprop:Generator_RowDeletingName="browseCustViewRowDeleting" msprop:Generator_RowChangingName="browseCustViewRowChanging" msprop:Generator_RowEvHandlerName="browseCustViewRowChangeEventHandler" msprop:Generator_RowDeletedName="browseCustViewRowDeleted" msprop:Generator_UserTableName="browseCustView" msprop:Generator_RowChangedName="browseCustViewRowChanged" msprop:Generator_RowEvArgName="browseCustViewRowChangeEvent" msprop:Generator_RowClassName="browseCustViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Customer_Number" msprop:Generator_ColumnVarNameInTable="columnCustomer_Number" msprop:Generator_ColumnPropNameInRow="Customer_Number" msprop:Generator_ColumnPropNameInTable="Customer_NumberColumn" msprop:Generator_UserColumnName="Customer_Number" type="xs:int" minOccurs="0" />
+              <xs:element name="RoomType_Name" msprop:Generator_ColumnVarNameInTable="columnRoomType_Name" msprop:Generator_ColumnPropNameInRow="RoomType_Name" msprop:Generator_ColumnPropNameInTable="RoomType_NameColumn" msprop:Generator_UserColumnName="RoomType_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_FName" msprop:Generator_ColumnVarNameInTable="columnCustomer_FName" msprop:Generator_ColumnPropNameInRow="Customer_FName" msprop:Generator_ColumnPropNameInTable="Customer_FNameColumn" msprop:Generator_UserColumnName="Customer_FName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_LName" msprop:Generator_ColumnVarNameInTable="columnCustomer_LName" msprop:Generator_ColumnPropNameInRow="Customer_LName" msprop:Generator_ColumnPropNameInTable="Customer_LNameColumn" msprop:Generator_UserColumnName="Customer_LName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_addr1" msprop:Generator_ColumnVarNameInTable="columnCustomer_addr1" msprop:Generator_ColumnPropNameInRow="Customer_addr1" msprop:Generator_ColumnPropNameInTable="Customer_addr1Column" msprop:Generator_UserColumnName="Customer_addr1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_addr2" msprop:Generator_ColumnVarNameInTable="columnCustomer_addr2" msprop:Generator_ColumnPropNameInRow="Customer_addr2" msprop:Generator_ColumnPropNameInTable="Customer_addr2Column" msprop:Generator_UserColumnName="Customer_addr2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_city" msprop:Generator_ColumnVarNameInTable="columnCustomer_city" msprop:Generator_ColumnPropNameInRow="Customer_city" msprop:Generator_ColumnPropNameInTable="Customer_cityColumn" msprop:Generator_UserColumnName="Customer_city" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_state" msprop:Generator_ColumnVarNameInTable="columnCustomer_state" msprop:Generator_ColumnPropNameInRow="Customer_state" msprop:Generator_ColumnPropNameInTable="Customer_stateColumn" msprop:Generator_UserColumnName="Customer_state" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_zip" msprop:Generator_ColumnVarNameInTable="columnCustomer_zip" msprop:Generator_ColumnPropNameInRow="Customer_zip" msprop:Generator_ColumnPropNameInTable="Customer_zipColumn" msprop:Generator_UserColumnName="Customer_zip" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_phone" msprop:Generator_ColumnVarNameInTable="columnCustomer_phone" msprop:Generator_ColumnPropNameInRow="Customer_phone" msprop:Generator_ColumnPropNameInTable="Customer_phoneColumn" msprop:Generator_UserColumnName="Customer_phone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_discounts" msprop:Generator_ColumnVarNameInTable="columnCustomer_discounts" msprop:Generator_ColumnPropNameInRow="Customer_discounts" msprop:Generator_ColumnPropNameInTable="Customer_discountsColumn" msprop:Generator_UserColumnName="Customer_discounts" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_guid" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnCustomer_guid" msprop:Generator_ColumnPropNameInRow="Customer_guid" msprop:Generator_ColumnPropNameInTable="Customer_guidColumn" msprop:Generator_UserColumnName="Customer_guid" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:browseCustView" />
+      <xs:field xpath="mstns:Customer_guid" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
